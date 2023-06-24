@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +9,7 @@
     font-family: poppins;
 }
 
-body{
+body {
     background-color: #d0d0d0;
 }
 
@@ -31,41 +35,27 @@ h4 {
     color: #212121;
 }
 
-ul{
+ul {
     display: flex;
-    gap: 3rem;
     list-style: none;
 }
 
 
-a{
-    text-decoration: none;
-    color: #212121;
-    border: 1px solid #212121;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-}
-
-a:hover {
-    border: 1px solid #ffffff;
-    background-color: #212121; 
-    color: white;
-    box-shadow: 5px 5px rgba(0, 0, 0,0.2);
-}
-
 
 main {
-    width: 100vw;
-    height: 80vh;
     display: flex;
     flex-direction: column;
-    gap: 5rem;
     align-items: center;
-    justify-content: center;
+    max-width: 30rem;
+    gap: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-#btn{
-    width: 20rem;
+#btn {
+    width: 100%;
     padding: 1rem;
     border: 2px solid #212121;
     background: none;
@@ -77,6 +67,7 @@ main {
 
 
 .container {
+    width: 100%;
     padding: 2rem 6rem;
     background-color: #212121;
     border-radius: 10px;
@@ -90,31 +81,51 @@ span {
 
 #btn:hover {
     border: 2px solid #ffffff;
-    background-color: #212121; 
+    background-color: #212121;
     color: white;
-    box-shadow: 8px 8px rgba(0, 0, 0,0.2);
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.2);
 }
 
 
 .socials {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    padding: 0 1rem;
-    border: none;
+
 }
 
-.socials a {
-    border: none;
+
+.imgs {
+    width: 3rem;
+    height: 3rem;
+    padding: 10px;
+    background-color: #212121;
+    border-radius: 10px;
+
 }
 
-.hs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    gap: 1rem;
-} 
+.imgs:hover {
+    background-color: rgba(33, 33, 33, 0.39);
+    border-radius: 10px;
+}
 
+
+
+
+@media (max-width: 706px) {
+    main {
+
+        width: 80vw;
+
+    }
+}
+
+@media (max-width: 440px) {
+    main {
+
+        width: 95vw;
+
+    }
+}
